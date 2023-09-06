@@ -6,7 +6,7 @@ import Completed from '../assets/completed.mp3';
 const useTodoState = (initialTodos) => {
   const [todos, setTodos] = useLocalStorageState('todos', initialTodos);
   const [audioPlayed, setAudioPlayed] = useState(false);
-
+  console.log('audioPlayed', audioPlayed)
   const handleStartClick = () => {
     // if (!audioPlayed) {
       const audio = new Audio(Frog);
